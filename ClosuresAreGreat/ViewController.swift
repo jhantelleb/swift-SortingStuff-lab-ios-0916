@@ -14,8 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-  
-    
-
-    
+    func performOperation(with numbers: Double..., operation: (Double, Double) -> Double) -> Double {
+        return numbers.reduce(0, operation)
+    } //the other operations doesn't work on playground hmm.. is there another solution using reduce?
 }
